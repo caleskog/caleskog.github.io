@@ -1,7 +1,7 @@
-title: Christoffer Åleskogs's Homepage
+title: My Homepage
 author:
   name: Christoffer Åleskog
-  email: christoffer.aleskog@gmail.com
+  email: "christoffer.aleskog@gmail.com"
 
 # The `>` after `description:` means to ignore line-breaks until next key.
 # If you want to omit the line-break after the end of text, use `>-` instead.
