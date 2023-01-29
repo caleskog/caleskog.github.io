@@ -1,1 +1,4 @@
 _site
+.warnings
+.tmp
+.Gemfile.lock
