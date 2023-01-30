@@ -7,5 +7,42 @@ layout: default
     <h1 class="page-heading">{{ page.title }}</h1>
   {%- endif -%}
 
+  <div class="my_divider my_div-transparent"></div>
+
   {{ content }}
+
+  <div class="my_divider my_div-transparent"></div>
+
+  {%- if page.list_title -%}
+    <h2 class="post-list-heading">{{ page.list_title }}</h2>
+  {%- endif -%}
+  <ul class="post-list">
+    {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+    {%- assign my_counter = 0 -%}
+    {%- for post in site.posts -%}
+      {%- if my_counter >= 3 -%}
+        {%- break -%}
+      {%- endif -%}
+      {%- assign my_counter = my_counter | plus: 1 -%}
+      <li>
+        <span class="post-meta">{{ post.date | date: date_format }}</span>
+        <h3>
+          <a class="post-link" href="{{ post.url | relative_url }}">
+            {{ post.title | escape }}
+          </a>
+        </h3>
+
+        <div class="my_container">
+          {% for tag in post.tags %}
+            <p class="my_tag">{{ tag }}</p>
+          {% endfor %}
+        </div>
+
+        {%- if site.show_excerpts -%}
+          {{ post.excerpt }}
+        {%- endif -%}
+      </li>
+    {%- endfor -%}
+  </ul>
+  
 </div>

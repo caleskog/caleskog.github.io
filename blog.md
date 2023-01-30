@@ -4,4 +4,4 @@ title: Blog
 permalink: /blog/
 ---
 
-This here is my blog ...
+Posts about various computer science related topics.

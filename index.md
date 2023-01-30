@@ -6,11 +6,14 @@
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 #
 title: Christoffer Åleskog's Website
+list_title: Recent Posts
 layout: home
 ---
 
-## Christoffer Åleskog | [BTH profile](https://www.bth.se/staff/christoffer-aleskog-cck/)
+## Welcome to my lonely corner of the Internet
 
-Find me at [LinkedIn](https://www.linkedin.com/in/christoffer-%C3%A5leskog-885109184/)
+Hi there!
 
-More to be added ...
+Are you a curious netizen, an inspiring programmer, a fully fledged professor in academia, or just a lost soul searching comfort. Do not worry! Here you will be entertained, find code in the most interesting of programming languages (my opinion), articles, or whatever else I might add.
+
+So go on now. Step forward and follow me in a wild, long road for the endless journey of one's curious mind.

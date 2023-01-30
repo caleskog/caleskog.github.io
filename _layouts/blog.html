@@ -4,6 +4,16 @@ layout: default
 
 <div class="blog">
     {{ content }}
+    
+    <!--<p> Filter by tag:
+      <span>
+        {% for tag in site.tags %}
+          <button class="button-18" role="button" onclick="">{{ tag[0] }}</button>
+        {% endfor %}
+      </span>
+    </p>-->
+
+    <div class="my_divider my_div-transparent"></div>
   
     {% if site.paginate %}
       {% assign posts = paginator.posts %}
@@ -11,7 +21,7 @@ layout: default
       {% assign posts = site.posts %}
     {% endif %}
   
-  
+    <!--{% assign my_posts = posts | where: "tags", "classic" %}-->
     {%- if posts.size > 0 -%}
       {%- if page.list_title -%}
         <h2 class="post-list-heading">{{ page.list_title }}</h2>
