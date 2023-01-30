@@ -1,7 +1,7 @@
 #!/bin/bash
 touch .tmp
 
-echo "Starting, this can take a minute..."
+echo "Starting, this can take a minutes..."
 (bundle exec jekyll serve 2> .warnings 1> .tmp) & {
     while true; do
         output=$(rg -oN -e "http:/+\d+(\.\d+)+:\d+" .tmp)

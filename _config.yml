@@ -29,6 +29,7 @@ minima:
     - { platform: linkedin,       user_url: "https://www.linkedin.com/in/christoffer-Åleskog-885109184/" }
     - { platform: google_scholar, user_url: "https://scholar.google.com/citations?user=KIZVufAAAAAJ&hl=sv&oi=ao" }
     - { platform: github,       user_url: "https://github.com/caleskog" }
+    - { platform: bth,       user_url: "https://www.bth.se/staff/christoffer-aleskog-cck/" }
   
     
   # Minima date format.
@@ -62,7 +63,7 @@ header_pages:
   - blog.md
 
 include:
-  - favicons
+  - assets/favicons
 
 # Set to `true` to show excerpts on the homepage.
 #
