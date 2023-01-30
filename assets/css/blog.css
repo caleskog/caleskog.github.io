@@ -1,0 +1,22 @@
+/* 
+Light orange: #ff6600
+Dark orange: #8d4004
+ */
+.my_tag {
+    border-radius: 25px;
+    background: #af4c0a;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-right: 10px;
+    padding-left: 10px;
+
+    color: #bebebe;
+    font-weight: 700;
+
+    scale: 0.8;
+    margin-right: -0.5em;
+  }
+
+.my_container{
+    display: flex;
+}

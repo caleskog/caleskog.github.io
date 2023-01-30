@@ -3,12 +3,7 @@ layout: default
 ---
 
 <div class="blog">
-    {%- if page.title -%}
-      <h1 class="page-heading">{{ page.title }}</h1>
-    {%- endif -%}
-  
     {{ content }}
-  
   
     {% if site.paginate %}
       {% assign posts = paginator.posts %}
@@ -31,9 +26,17 @@ layout: default
               {{ post.title | escape }}
             </a>
           </h3>
+
+          <div class="my_container">
+            {% for tag in post.tags %}
+              <p class="my_tag">{{ tag }}</p>
+            {% endfor %}
+          </div>
+
           {%- if site.show_excerpts -%}
             {{ post.excerpt }}
           {%- endif -%}
+          
         </li>
         {%- endfor -%}
       </ul>
