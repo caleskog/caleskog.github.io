@@ -15,7 +15,14 @@
         {%- if site.author %}
           <ul class="contact-list">
             {% if site.author.name -%}
-              <li class="p-name">{{ site.author.name | escape }}</li>
+              <li class="p-name">
+                <a href="https://orcid.org/0000-0002-0476-4177" style="color: inherit;">
+                  {{ site.author.name | escape }}
+                  <img src="https://orcid.org/sites/default/files/images/orcid_16x16.png"
+                      style="width: 16; height: 16;"
+                      alt="ORCID ilogo"/>
+                </a>
+              </li>
             {% endif -%}
             {% if site.author.email -%}
               <li><a class="u-email" href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></li>
