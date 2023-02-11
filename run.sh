@@ -14,8 +14,10 @@ echo "Starting, this can take a minutes..."
 wait
 
 
-# Documentation for Jakyll/minima can be found here:
-# - Jakyll: 
+# Minima repository: https://github.com/jekyll/minima
+
+# Documentation for Jekyll/minima can be found here:
+# - Jekyll: 
 #       * Docs:                             https://jekyllrb.com/docs/
 #       * Configuring Your Jekyll Site:     https://www.aleksandrhovhannisyan.com/blog/getting-started-with-jekyll-and-github-pages/#configuring-your-jekyll-site
 # - minima: https://github.com/jekyll/minima
